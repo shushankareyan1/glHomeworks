@@ -48,6 +48,15 @@ void main()
         FragColor = vec4(0.133f, 0.878f, 0.878f, 1.0f);
     }
 
+ //moon
+  if (onCircle(0.05f, 0.0f, 0.3f)) {
+             FragColor = vec4(0.133f, 0.654f, 0.878f, 1.0f);
+   }
+   if (inCircle(0.01f, 0.0f, 0.35)) {
+             FragColor = vec4(0.99f, 0.99f, 0.88f, 1.0f);
+   }
+
+
 //Uran
     if(inCircle(0.05f, -0.6f, 0.0f)) {
         FragColor = vec4(0.878f, 0.431f, 0.133f, 1.0f);
