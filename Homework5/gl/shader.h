@@ -8,6 +8,7 @@ class Shader {
 public:
     Shader(const std::string& fileName, bool step);
     void useProgram(int );
+    void changeTime(int time);
 
 
     void Draw();

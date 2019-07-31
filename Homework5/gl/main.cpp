@@ -13,6 +13,7 @@ int main(int argc, const char* argv[]) {
 
     // Add shader program into GPU
     // Loop for window
+    int time = 180;
     while(!glfwWindowShouldClose(display.getWindow()))
     {
       
@@ -21,7 +22,10 @@ int main(int argc, const char* argv[]) {
 
        // Write your draw logic here
         shader.useProgram(0);
+        shader.changeTime(time);
         shader.Draw();
+        ++time;
+        //if(++time == 1000) time = 0;
 
 
 

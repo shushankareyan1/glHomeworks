@@ -107,6 +107,15 @@ glDisableVertexAttribArray(0);
     
 }
 
+void Shader::changeTime(int time){
+
+GLint t = glGetUniformLocation(m_program[0], "time");
+if (time != -1)
+{
+   glUniform1i(t, time);
+}
+}
+
 std::string LoadShader(const std::string& fileName) {
     std::ifstream file;
     file.open((fileName).c_str());

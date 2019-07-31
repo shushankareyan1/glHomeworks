@@ -4,6 +4,9 @@ layout (location = 0) in vec3 VertexPosition;
 
 uniform mat4 MVP_matrix;
 
+uniform int time;
+
+
 out vec3 coord;
 
 
